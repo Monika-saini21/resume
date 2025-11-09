@@ -7,16 +7,16 @@
   <title>Monika Resume</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-   body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  color: #000000;
-  line-height: 1.6;
-  width: 900px;         
-  margin-inline: auto;   
-  background: #e7e3e3;
-}
-   
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #000000;
+      line-height: 1.6;
+      width: 900px;
+      margin-inline: auto;
+      background: #e7e3e3;
+    }
+
     .container {
       max-width: 1000px;
       padding-left: 2rem;
@@ -52,7 +52,6 @@
       left: 2rem;
       bottom: 4rem;
       height: 0;
-      
       font-size: large;
       font-weight: 500;
     }
@@ -84,11 +83,10 @@
       font-weight: 600;
       padding-top: 1.3rem;
     }
-    
+
     .section-title-2 {
       color: #051542;
       font-weight: 600;
-     
     }
 
     .section-title-1 div {
@@ -100,13 +98,11 @@
     }
 
     .section-title-2 div {
-     
       border-bottom: 3px solid #a4a4a5;
       position: relative;
       bottom: 1.2rem;
       left: 9rem;
       width: 43rem;
-      
     }
 
     .project p,
@@ -172,113 +168,121 @@
       color: #051542;
       font-size: 0.8rem;
     }
-    
-    .resume{
+
+    .resume {
       background: white;
     }
-    
-    
+
+    /* ✅ Make laptop page fit exactly on phone screen */
+    @media (max-width: 768px) {
+      html,
+      body {
+        overflow-x: hidden;
+        background: #e7e3e3;
+      }
+
+      body {
+        width: 900px;
+        transform: scale(0.45);
+        transform-origin: top left;
+        margin: 0;
+      }
+    }
   </style>
 </head>
 
 <body>
-  
-  <header>
-    <h1>Monika Saini</h1>
-    <p>Front-end Developer</p>
-    <div class="contact">
-      <strong>E-mail:</strong> Monikasaini4717@gmail.com | <strong>Ph:</strong> ‪+918360785822‬
-      <a href="https://www.linkedin.com/in/monika-saini-27a426351/"><button>Linkedin</button></a><a href="https://monika-saini-portfolio.netlify.app/"><button>Portfolio</button></a>
-    </div>
-  </header>
-<div class="resume">
-  <div class="container">
-    <main>
-      <section>
-        <h2 class="section-title-1">Summary <div></div>
+  <div class="page-wrapper">
+    <header>
+      <h1>Monika Saini</h1>
+      <p>Front-end Developer</p>
+      <div class="contact">
+        <strong>E-mail:</strong> Monikasaini4717@gmail.com | <strong>Ph:</strong> ‪+918360785822‬
+        <a href="https://www.linkedin.com/in/monika-saini-27a426351/"><button>Linkedin</button></a>
+        <a href="https://monika-saini-portfolio.netlify.app/"><button>Portfolio</button></a>
+      </div>
+    </header>
+    <div class="resume">
+      <div class="container">
+        <main>
+          <section>
+            <h2 class="section-title-1">Summary <div></div>
+            </h2>
+            <p>Creative and detail-oriented Front-end Developer with Expertise in creating user-friendly interfaces for web.
+              Proficient in developing scalable Web App and Web Site. </p>
+          </section>
+
+          <section class="project">
+            <h2 class="section-title">Project <div></div>
+            </h2>
+            <h4>Diamond Emporium</h4>
+            <p><strong>Tech Stack:</strong> React.js, Tailwind CSS, Vite, React Router DOM</p>
+            <p><strong>Description:</strong> Developed a e-commerce platform for selling jewellery products,
+              with a strong focus on front-end architecture, responsive UI design, and seamless user experience.</p>
+
+            <h4>Swiggy (clone)</h4>
+            <p><strong>Tech Stack:</strong> React.js, Vite, Tailwind CSS, GeaLocationAPI, React Router DOM </p>
+            <p><strong>Description:</strong> This project is a Swiggy-inspired food delivery application built to replicate
+              the core functionality of an online restaurant and food ordering platform.</p>
+
+            <h4>Todo App</h4>
+            <p><strong>Tech Stack:</strong>React.js, Tailwind, Vite, React Router DOM, Redux</p>
+            <p><strong>Description:</strong> A task management application built with React, Redux, and Tailwind CSS,
+              designed to help users organize daily tasks efficiently.</p>
+
+            <h4>GitHub Profile Analyzer (Frontend Project)</h4>
+            <p><strong>Tech Stack:</strong>HTML, CSS, JavaScript, GitHub REST API</p>
+            <p><strong>Description:</strong> A lightweight, frontend-only web app that allows users to search any
+              GitHub username and instantly view their profile details and recent repositories.</p>
+          </section>
+        </main>
+
+        <aside class="sidebar">
+          <section>
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+              <li>React.js</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Languages</h3>
+            <ul>
+              <li>English</li>
+              <li>Hindi</li>
+              <li>Punjabi</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Personal Details</h3>
+            <ul>
+              <li>DOB: 09-july-2003</li>
+              <li>Gender: Female</li>
+              <li>Marital Status: Unmarried</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+      <div style="background-color:white; padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem;">
+        <h2 class="section-title-2">Education<div></div>
         </h2>
-        <p>Creative and detail-oriented Front-end Developer with Expertise in creating user-friendly interfaces for web.
-          Proficient in developing scalable Web App and Web Site. </p>
-      </section>
-
-      <section class="project">
-        <h2 class="section-title">Project <div></div>
-        </h2>
-        <h4>Diamond Emporium</h4>
-        <p><strong>Tech Stack:</strong> React.js, Tailwind CSS, Vite, React Router DOM</p>
-        <p><strong>Description:</strong> Developed a  e-commerce platform for selling jewellery products,
-          with a strong focus on front-end architecture, responsive UI design, and seamless user experience.</p>
-       
-
-        <h4>Swiggy (clone)</h4>
-        <p><strong>Tech Stack:</strong> React.js, Vite, Tailwind CSS,  GeaLocationAPI, React Router DOM </p>
-        <p><strong>Description:</strong> This project is a Swiggy-inspired food delivery application built to replicate
-           the core functionality of an online restaurant and food ordering platform. It allows users to browse a list of
-            restaurants, explore menus, add items to the cart, and manage their orders—all within a responsive and 
-            user-friendly interface. The project demonstrates strong skills in React.js, state management, API handling,
-            and UI design.</p>
-        
-          <h4>Todo App</h4>
-        <p><strong>Tech Stack:</strong>React.js, Tailwind, Vite, React Router DOM, Redux</p>
-        <p><strong>Description:</strong> A task management application built with React, Redux, and Tailwind CSS,
-           designed to help users organize daily tasks efficiently. It includes features like adding, editing, deleting,
-           and marking tasks as complete, along with a dark/light mode toggle for better user experience.</p>    
-   
-
-        <h4>GitHub Profile Analyzer (Frontend Project)</h4>
-        <p><strong>Tech Stack:</strong>HTML, CSS, JavaScript, GitHub REST API</p>
-        <p><strong>Description:</strong> A lightweight, frontend-only web app that allows users to search any
-          GitHub username and instantly view their profile details and recent repositories.</p>
-        
-      </section>
-    </main>
-
-    <aside class="sidebar">
-      <section>
-        <h3>Skills</h3>
-        <ul>
-          <li>HTML5 & CSS3</li>
-          <li>JavaScript</li>
-          <li>Tailwind CSS</li>
-          <li>React.js</li>
-          <li>Git & GitHub</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Languages</h3>
-        <ul>
-          <li>English</li>
-          <li>Hindi</li>
-          <li>Punjabi</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Personal Details</h3>
-        <ul>
-          <li>DOB: 09-july-2003</li>
-          <li>Gender: Female</li>
-          <li>Marital Status: Unmarried</li>
-        </ul>
-      </section>
-    </aside>
-  </div>
-  <div style="  background-color:white; padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem;">
- <h2 class="section-title-2">Education<div></div>
-    </h2>
-  <section style=" display:flex; justify-content: space-between;">
-   
-    <div>
-    <p>BCA | Guru Nanak Dev University</p>
-    <p>10+2 | PSEB Punjab Board </p>
-    <p>10th | PSEB Punjab Board </p>
+        <section style=" display:flex; justify-content: space-between;">
+          <div>
+            <p>BCA | Guru Nanak Dev University</p>
+            <p>10+2 | PSEB Punjab Board </p>
+            <p>10th | PSEB Punjab Board </p>
+          </div>
+          <div>
+            <p>(2022–2025)</p>
+            <p style="text-align: end;">(2022)</p>
+            <p style="text-align: end;">(2020)</p>
+          </div>
+        </section>
+      </div>
     </div>
-    <div>
-    <p >(2022–2025)</p>
-    <p style="text-align: end;">(2022)</p>
-    <p style="text-align: end;">(2020)</p>
-</div>
-  </section>
-  </div>
   </div>
 </body>
 
